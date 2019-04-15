@@ -58,6 +58,7 @@
 						  <td>
 							  <a href="{{route('inventori.edit',$dataInven->id_inventaris)}}" class="btn btn-success">Ubah</a>
 							  <a href="{{route('inventori.destroy',$dataInven->id_inventaris)}}" class="btn btn-danger">Hapus</a>
+								<a href="{{route('kondisi.edit',$dataInven->id_inventaris)}}" class="btn btn-info">Ubah Kondisi</a>
 						 </td>
 						</tr>
 						@endforeach
