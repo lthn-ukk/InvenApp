@@ -8,4 +8,5 @@ class Peminjaman extends Model
 {
     protected $primaryKey = 'id_peminjaman';
     protected $table = 'peminjaman';
+    public $timestamps = false;
 }

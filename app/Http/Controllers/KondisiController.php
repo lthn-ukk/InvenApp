@@ -15,7 +15,7 @@ class KondisiController extends Controller
         return view('admin.kondisi.addKondisi',['inven'=>$inven]);
     }
 
-    public function storeKondisi(Request $request){
+    public function edit(Request $request,$id){
 
     }
 }
