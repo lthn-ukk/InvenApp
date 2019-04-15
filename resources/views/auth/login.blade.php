@@ -41,12 +41,13 @@
 
               <div class="card-body">
                 <form method="POST" class="needs-validation" novalidate="" action="{{ route('login')}}">
+                {{ csrf_field() }}
                   <div class="form-group">
-                    <label for="email">{{ __('E-Mail Address') }}</label>
-                     <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
-                                @if ($errors->has('email'))
+                    <label for="username">{{ __('Username') }}</label>
+                     <input id="usename" type="text" class="form-control{{ $errors->has('username') ? ' is-invalid' : '' }}" name="username" value="{{ old('username') }}" required autofocus>
+                                @if ($errors->has('username'))
                                     <div class="invalid-feedback">
-                                      Please fill in your email
+                                      Please fill in your username
                                     </div>
                                 @endif
                   </div>

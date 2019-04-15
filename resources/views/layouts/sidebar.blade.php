@@ -11,18 +11,21 @@
             <li>
               <a href="#" class="nav-link"><i class="fas fa-fire"></i><span>Dashboard</span></a>
             </li>
-            <li class=active><a class="nav-link" href="#"><i class="fas fa-briefcase"></i> <span>Inventaris</span></a></li>
-            <li><a class="nav-link" href="#"><i class="fas fa-clipboard"></i> <span>Laporan</span></a></li>
-            <li><a class="nav-link" href="#"><i class="fas fa-th"></i> <span>Peminjaman</span></a></li>
-           <li>
-              <a href="#" class="nav-link"><i class="fas fa-columns"></i><span>Ruang</span></a>
-            </li>
+
             <li class="dropdown">
-              <a href="#" class="nav-link has-dropdown"><i class="fas fa-users"></i> <span>User</span></a>
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-briefcase"></i><span>Inventaris</span></a>
               <ul class="dropdown-menu">
-                <li><a href="#" class="nav-link">Pegawai</a></li>
-                <li><a href="#" class="nav-link">Petugas</a></li>
+                <li class=""><a class="nav-link" href="{{ route('inventori.index') }}">Data Inventaris</a></li>
+                <li><a class="nav-link" href="{{route('jenis.index')}}">Data Jenis Inventaris</a></li>
+                <li><a href="/kondisi" class="nav-link"><span>Kondisi</span></a></li>
               </ul>
+            </li>
+            
+            <li><a class="nav-link" href="#"><i class="fas fa-clipboard"></i> <span>Laporan</span></a></li>
+            <li><a class="nav-link" href="{{route('peminjaman')}}"><i class="fas fa-th"></i> <span>Peminjaman</span></a></li>
+            <li><a href="#" class="nav-link"><i class="fas fa-users"></i> <span>Petugas</span></a></li>
+           <li>
+              <a href="{{ route('ruang.index') }}" class="nav-link"><i class="fas fa-columns"></i><span>Ruang</span></a>
             </li>
           </ul>
 
